@@ -1,0 +1,219 @@
+.landing-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 50px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.section.reverse {
+    flex-direction: row-reverse;
+}
+
+.section-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.section-text h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section-text p {
+    font-size: 1.2rem;
+}
+
+.section-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.section-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* ... existing CSS ... */
+
+.info-section {
+    text-align: center;
+    padding: 2rem;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+.info-header {
+    margin-bottom: 2rem;
+}
+
+.info-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.info-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 2rem;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+.info-box h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.info-box p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* ... existing CSS ... */
+
+.passive-income-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.left-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 20px;
+}
+
+.right-side {
+    flex: 1;
+    padding: 20px;
+}
+
+.explore-btn {
+    background-color: rgb(0, 150, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: rgb(0, 130, 230);
+}
+
+.top-farms {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #869bd3;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+.passive-income-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+  .top-farm {
+    width: calc(100% / 5 - 1rem); /* Subtract the margin space */
+    padding: 0.5rem;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgb(92, 138, 163);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin: 0.5rem; /* Add margin to create space between boxes */
+  }
+  
+  .top-farm:hover {
+    transform: translateY(-10px);
+  }
+  
+  .top-farm h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #bbc2c6;
+  }
+  
+  .top-farm p {
+    font-size: 1rem;
+    margin: 0;
+    color: #f2e8e8;
+  }
+
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+    }
+
+    .section.reverse {
+        flex-direction: column;
+    }
+
+    .info-content {
+        flex-direction: column;
+    }
+
+    .info-box {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .passive-income-section {
+        flex-direction: column;
+    }
+
+    .top-farms {
+        flex-direction: column;
+    }
+
+    .top-farm {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+}
