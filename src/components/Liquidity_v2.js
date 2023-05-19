@@ -9,24 +9,18 @@ function AddLiquidityv2(props) {
     const [tokenOneAmount, setTokenOneAmount] = useState('')
 
     const { config } = usePrepareContractWrite({
-        address: '0x5fbdb2315678afecb367f032d93f642f64180aa3',
+        address: '0xFBA3912Ca04dd458c843e2EE08967fC04f3579c2',
         abi: [
             {
-                name: "addLiquidity",
+                name: "mint",
                 type: "function",
-                stateMutability: "payable",
-                inputs: [
-                    {
-                        internalType: "uint256",
-                        name: "_tokenAmount",
-                        type: "uint256"
-                    }
-                ],
+                stateMutability: "nonpayable",
+                inputs: [{ internalType: 'uint256', name: 'tokenId', type: 'uint256' }],
                 outputs: [],
-            }
+            },
         ],
-        functionName: 'addLiquidity',
-        args: [parseInt(tokenOneAmount) || 0], // Pass _tokenAmount input from user
+        functionName: 'mint',
+        args: [parseInt(tokenOneAmount)],
         enabled: Boolean(tokenOneAmount),
     })
 
@@ -36,6 +30,11 @@ function AddLiquidityv2(props) {
         hash: data?.hash,
     })
 
+    console.log('write:', write);
+
+    useEffect(() => {
+        console.log('data:', data);
+    }, [data]);
     return (
         <>
             <div className="swapWrapper">
@@ -58,7 +57,7 @@ function AddLiquidityv2(props) {
                             value={tokenOneAmount}
                         />
                     </div>
-                    <button className="swapButton" disabled={!write || isLoading}>
+                    <button className="swapButton" disabled={!write}>
                         {isLoading ? 'Loading...' : 'Add Liquidity'}
                     </button>
                     {isSuccess && (

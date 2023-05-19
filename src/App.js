@@ -3,14 +3,16 @@ import "./App.css";
 import Header from "./components/Header";
 
 import Swap from "./components/Swap";
+import Swapv2 from "./components/Swap_v2";
+
 import Tokens from "./components/Tokens";
 import { Routes, Route } from "react-router-dom";
 
 import { useConnect, useAccount } from "wagmi";
 import { MetaMaskConnector } from "wagmi/connectors/metaMask";
 
-import AddLiquidity from "./components/Liquidity";
 import AddLiquidityv2 from "./components/Liquidity_v2";
+import AddLiquidityv3 from "./components/Liquidity_v3";
 
 import Footer from "./components/Footer";
 import ChatBox from './components/ChatBox';
@@ -33,9 +35,9 @@ function App() {
         <div className="mainWindow">
           <Routes>
             <Route path="/" element={<Firstpage isConnected={isConnected} address={address} />} />
-            <Route path="/swap" element={<Swap isConnected={isConnected} address={address} />} />
+            <Route path="/swap" element={<Swapv2 isConnected={isConnected} address={address} />} />
             <Route path="/tokens" element={<Tokens isConnected={isConnected} address={address} />} />
-            <Route path="/liquidity" element={<AddLiquidityv2 isConnected={isConnected} address={address} />} />
+            <Route path="/liquidity" element={<AddLiquidityv3 isConnected={isConnected} address={address} />} />
             <Route path="/list" element={<TopTenCryptos isConnected={isConnected} address={address} />} />
           </Routes>
         </div>

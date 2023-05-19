@@ -86,7 +86,7 @@ function Swap(props) {
 
   async function fetchPrices(one, two) {
 
-    const res = await axios.get(`https://backend-pepe.herokuapp.com/tokenPrice`, {
+    const res = await axios.get(`https://localhost:3000/tokenPrice`, {
       params: { addressOne: one, addressTwo: two }
     })
 

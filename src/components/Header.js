@@ -12,7 +12,9 @@ function Header(props) {
   return (
     <header>
       <div className="leftH">
-        <img src={Pepe_Coin} alt="logo" className="logo" />
+        <Link to="/" className="link">
+          <img src={Pepe_Coin} alt="logo" className="logo" />
+        </Link>
         <Link to="/" className="link">
           <div className="headerItem">Home</div>
         </Link>
@@ -24,9 +26,6 @@ function Header(props) {
         </Link>
         <Link to="/liquidity" className="link">
           <div className="headerItem">Liquidity</div>
-        </Link>
-        <Link to="/list" className="link">
-          <div className="headerItem">List</div>
         </Link>
         <Link to="" className="link">
           <div className="headerItem" style={{ position: "relative" }}>

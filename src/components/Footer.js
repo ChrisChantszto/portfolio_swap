@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faTwitter, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter, faTelegram } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -41,10 +41,8 @@ const Footer = () => {
         <Row className="mt-4">
           <Col className="text-center">
             <div className="follow-us">
-              <FontAwesomeIcon icon={faFacebook} size="2x" />
               <FontAwesomeIcon icon={faTwitter} size="2x" />
-              <FontAwesomeIcon icon={faInstagram} size="2x" />
-              <FontAwesomeIcon icon={faLinkedin} size="2x" />
+              <FontAwesomeIcon icon={faTelegram} size="2x" />
             </div>
           </Col>
         </Row>
