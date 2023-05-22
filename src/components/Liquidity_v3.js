@@ -34,6 +34,7 @@ function AddLiquidityv3() {
         e.preventDefault();
         console.log("Button clicked");
         write?.();
+        console.log("write: ", write)
     };
 
     const testingClick = (e) => {

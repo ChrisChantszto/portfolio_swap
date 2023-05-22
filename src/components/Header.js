@@ -40,6 +40,7 @@ function Header(props) {
                 color: "white",
                 borderRadius: 5,
                 padding: "2px 5px",
+                zIndex: 2,
               }}
             >
               Coming Soon
@@ -59,6 +60,7 @@ function Header(props) {
                 color: "white",
                 borderRadius: 5,
                 padding: "2px 5px",
+                zIndex: 2,
               }}
             >
               Coming Soon
@@ -78,6 +80,7 @@ function Header(props) {
                 color: "white",
                 borderRadius: 5,
                 padding: "2px 5px",
+                zIndex: 2,
               }}
             >
               Coming Soon

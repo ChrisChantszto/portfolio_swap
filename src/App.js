@@ -14,6 +14,9 @@ import { MetaMaskConnector } from "wagmi/connectors/metaMask";
 import AddLiquidityv2 from "./components/Liquidity_v2";
 import AddLiquidityv3 from "./components/Liquidity_v3";
 
+import PoolAdd from "./components/PoolAdd";
+import PoolAddv2 from "./components/PoolAdd_v2";
+
 import Footer from "./components/Footer";
 import ChatBox from './components/ChatBox';
 
@@ -22,6 +25,8 @@ import ImageRight from "./components/ImageRight";
 import TopTenCryptos from "./components/Tokenlist";
 
 import Firstpage from "./components/Firstpage";
+
+import TermsOfService from "./components/Termsofservice";
 
 function App() {
   const { address, isConnected } = useAccount();
@@ -37,8 +42,10 @@ function App() {
             <Route path="/" element={<Firstpage isConnected={isConnected} address={address} />} />
             <Route path="/swap" element={<Swapv2 isConnected={isConnected} address={address} />} />
             <Route path="/tokens" element={<Tokens isConnected={isConnected} address={address} />} />
-            <Route path="/liquidity" element={<AddLiquidityv3 isConnected={isConnected} address={address} />} />
+            <Route path="/liquiditytest" element={<AddLiquidityv3 isConnected={isConnected} address={address} />} />
             <Route path="/list" element={<TopTenCryptos isConnected={isConnected} address={address} />} />
+            <Route path="/liquidity" element={<PoolAddv2 isConnected={isConnected} address={address} />} />
+            <Route path="/terms-of-service" element={<TermsOfService isConnected={isConnected} address={address} />} />
           </Routes>
         </div>
       </div>

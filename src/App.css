@@ -669,3 +669,75 @@ table tr:hover {
 .price-decrease {
   color: #F44336;
 }
+
+
+
+
+/* PoolAddv2.module.css */
+.smallPlaceholder::placeholder {
+  font-size: 14px;
+}
+
+
+
+
+/* Swapv2.module.css */
+.widgetWrapper {
+  position: relative;
+}
+
+.coverUniswapText {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 28px; /* Adjust height based on your needs */
+  background-color: #0E111B; /* Use the same background color as the container */
+  z-index: 10;
+}
+
+/* Footer.module.css */
+.footer-link {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #FFC107;
+  text-decoration: none;
+}
+
+
+
+
+
+/* TermsOfService.module.css */
+.terms-of-service {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.terms-of-service h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.terms-of-service h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.terms-of-service p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+}

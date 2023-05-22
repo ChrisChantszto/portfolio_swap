@@ -11,30 +11,40 @@ const Footer = () => {
           <div className="footer-section">
             <h4>About</h4>
             <ul>
-              <li>Contact</li>
-              <li>Brand</li>
-              <li>Blog</li>
-              <li>Community</li>
-              <li>Litepaper</li>
-              <li>Terms Of Service</li>
+              <li className='footer-link'>Contact</li>
+              <li className='footer-link'>Brand</li>
+              <li className='footer-link'>Blog</li>
+              <li className='footer-link'>Community</li>
+              <li className='footer-link'>Litepaper</li>
+              <li><a
+                  href="/terms-of-service"
+                  className="footer-link"
+              >Terms Of Service</a></li>
             </ul>
           </div>
           <div className="footer-section">
             <h4>Help</h4>
             <ul>
-              <li>Customer Support</li>
-              <li>Troubleshooting</li>
-              <li>Guides</li>
+              <li className='footer-link'>Customer Support</li>
+              <li className='footer-link'>Troubleshooting</li>
+              <li className='footer-link'>Guides</li>
             </ul>
           </div>
           <div className="footer-section">
             <h4>Developers</h4>
             <ul>
-              <li>Github</li>
-              <li>Documentation</li>
-              <li>Bug Bounty</li>
-              <li>Audits</li>
-              <li>Careers</li>
+              <li><a
+                href="https://github.com/Uniswap"
+                target="_blank"
+                rel="noopener noreferrer"
+                className='footer-link'
+              >
+                Github
+              </a></li>
+              <li className='footer-link'>Documentation</li>
+              <li className='footer-link'>Bug Bounty</li>
+              <li className='footer-link'>Audits</li>
+              <li className='footer-link'>Careers</li>
             </ul>
           </div>
         </div>
@@ -48,7 +58,7 @@ const Footer = () => {
         </Row>
         <Row className="mt-4">
           <Col>
-            <p className="copyright">Copyright 2023 Pepeswap</p>
+            <p className="copyright">&copy; Copyright 2023 Pepeswap</p>
           </Col>
           <Col>
             <p className="text-right rights">All rights reserved</p>
