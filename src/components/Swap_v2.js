@@ -7,10 +7,10 @@ function Swapv2() {
     const theme = {
         primary: '#5981F3',
         secondary: '#A9A9A9',
-        interactive: '#4E4E5A',
+        interactive: '#A9A9A9',
         container: '#0E111B',
         module: '#222633',
-        accent: 'transparent',
+        accent: '#A9A9A9',
         outline: 'transparent',
         dialog: '#243056',
         fontFamily: 'Segoe UI',
@@ -20,8 +20,7 @@ function Swapv2() {
     return (
         <div className="Uniswap">
             <div className='widgetWrapper'>
-                <SwapWidget theme={theme} />
-                <div className='coverUniswapText'></div> {/* Add the overlay element */}
+                <SwapWidget theme={theme} brandedFooter={false} />
             </div>
         </div>
     )
