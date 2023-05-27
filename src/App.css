@@ -105,12 +105,6 @@ header {
   color: #3b4874
 }
 
-.mainWindow {
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
-}
-
 .link {
   text-decoration: none;
   color: white;

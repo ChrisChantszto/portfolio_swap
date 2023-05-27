@@ -19,9 +19,7 @@ function Swapv2() {
 
     return (
         <div className="Uniswap">
-            <div className='widgetWrapper'>
-                <SwapWidget theme={theme} brandedFooter={false} />
-            </div>
+            <SwapWidget theme={theme} brandedFooter={false} />
         </div>
     )
 }

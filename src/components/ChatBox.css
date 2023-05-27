@@ -55,7 +55,7 @@
   
   /* Decorate the "Trigger" and "Close modal" buttons */
   .button {
-    background-color: #2c3e50; /* Set the button background color */
+    /* background-color: #2c3e50; */ /* Set the button background color */
     color: #ffffff; /* Set the button text color */
     padding: 8px 16px; /* Set the padding around the button text */
     border: none; /* Remove the default border */
@@ -70,9 +70,9 @@
   }
   
   /* Add hover effect to the buttons */
+  /* 
   .button:hover {
-    background-color: #34495e; /* Change the button background color on hover */
-  }
+    background-color: #34495e; Change the button background color on hover } */
 
   /*  
 
