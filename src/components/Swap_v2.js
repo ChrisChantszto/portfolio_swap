@@ -5,14 +5,14 @@ import '@uniswap/widgets/fonts.css'
 function Swapv2() {
 
     const theme = {
-        primary: '#FFF',
+        primary: '#5981F3',
         secondary: '#A9A9A9',
         interactive: '#4E4E5A',
         container: '#0E111B',
         module: '#222633',
         accent: 'transparent',
         outline: 'transparent',
-        dialog: '#000',
+        dialog: '#243056',
         fontFamily: 'Segoe UI',
         borderRadius: 15,
     }

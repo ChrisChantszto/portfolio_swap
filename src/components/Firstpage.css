@@ -131,8 +131,8 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: #869bd3;
-    border-radius: 10px;
+    background-color: #0E111B;
+    border-radius: 15px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
@@ -157,7 +157,7 @@
     padding: 0.5rem;
     box-sizing: border-box;
     text-align: center;
-    background-color: rgb(92, 138, 163);
+    background-color: #243056;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -172,7 +172,7 @@
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
-    color: #bbc2c6;
+    color: #ffffff;
   }
   
   .top-farm p {

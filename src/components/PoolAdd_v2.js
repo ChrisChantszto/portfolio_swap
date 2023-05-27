@@ -72,7 +72,6 @@ function PoolAddv2({ isConnected, address }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (
-            tokenAmountDesiredInput === '' ||
             tokenAmountMinInput === '' ||
             ethAmountMinInput === '' ||
             tokenAddress === ''
@@ -84,14 +83,14 @@ function PoolAddv2({ isConnected, address }) {
             const signer = provider.getSigner();
             const contractWithSigner = contract.connect(signer);
 
-            const tokenAmountDesired = ethers.utils.parseUnits(tokenAmountDesiredInput, 18);
+            // const tokenAmountDesired = ethers.utils.parseUnits(tokenAmountDesiredInput, 18);
             const tokenAmountMin = ethers.utils.parseUnits(tokenAmountMinInput, 18);
             const ethAmountMin = ethers.utils.parseUnits(ethAmountMinInput, 18);
             const deadline = Math.floor(Date.now() / 1000) + 60 * 20;
 
             const txResponse = await contractWithSigner.addLiquidityETH(
                 tokenAddress,
-                tokenAmountDesired,
+                tokenAmountMin,
                 tokenAmountMin,
                 ethAmountMin,
                 signer.getAddress(),
@@ -139,7 +138,7 @@ function PoolAddv2({ isConnected, address }) {
                     </label>
                 </div>
                 <br />
-                <div className="inputs" style={{ display: 'flex', justifyContent: 'space-between' }}>
+                {/* <div className="inputs" style={{ display: 'flex', justifyContent: 'space-between' }}>
                     <div style={{ width: '48%' }}>
                         <label>
                             <Input
@@ -150,8 +149,8 @@ function PoolAddv2({ isConnected, address }) {
                                 className='smallPlaceholder'
                             />
                         </label>
-                    </div>
-                    <div style={{ width: '48%' }}>
+                    </div> */}
+                    <div style={{ width: '100%' }}>
                         <label>
                             <Input
                                 type="text"
@@ -161,7 +160,7 @@ function PoolAddv2({ isConnected, address }) {
                                 className='smallPlaceholder'
                             />
                         </label>
-                    </div>
+                    {/* </div> */}
                 </div>
                 <br />
                 <div className="inputs">
