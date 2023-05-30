@@ -1,10 +1,14 @@
-# Getting Started with Create React App
+# Portfolio project - swap and liquidity pool
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Demo
 
 In the project directory, you can run:
+
+### direct to the follow URL:
+
+The website is hosted on Heroku. https://pepecoin-frontend.herokuapp.com/
 
 ### `npm start`
 
